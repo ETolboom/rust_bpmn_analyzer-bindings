@@ -1,0 +1,12 @@
+.venv
+.idea
+
+target
+
+Cargo.lock
+uv.lock
+
+*.so
+*.dylib
+*.dll
+*.pyd

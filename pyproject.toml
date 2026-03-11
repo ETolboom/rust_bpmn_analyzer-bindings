@@ -1,0 +1,15 @@
+[project]
+name = "rust_bpmn_analyzer-bindings"
+version = "0.1.0"
+description = "Python bindings for rust_bpmn_analyzer"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.maturin]
+module-name = "rust_bpmn_analyzer_bindings"
+python-source = "python"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
