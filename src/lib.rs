@@ -2,7 +2,7 @@ use rust_bpmn_analyzer::model_checking::properties::{Property};
 use rust_bpmn_analyzer::read_bpmn_from_string;
 use pyo3::prelude::*;
 
-#[pyclass]
+#[pyclass(skip_from_py_object)]
 #[derive(Clone)]
 pub struct PyProperty {
     #[pyo3(get)]
