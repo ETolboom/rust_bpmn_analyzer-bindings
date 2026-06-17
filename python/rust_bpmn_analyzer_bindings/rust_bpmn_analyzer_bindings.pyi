@@ -6,6 +6,8 @@ class PyProperty:
     fulfilled: bool
     problematic_elements: list[str]
     description: str
+    counter_example: str | None
+    """JSON-encoded counterexample ({start_state, transitions}) or None when the property holds."""
 
     def __init__(
         self,
@@ -13,6 +15,7 @@ class PyProperty:
         fulfilled: bool,
         problematic_elements: list[str],
         description: str,
+        counter_example: str | None,
     ) -> None: ...
 
 def analyze_safeness(model: str) -> PyProperty:
